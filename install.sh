@@ -1,14 +1,14 @@
 #!/bin/bash
-# Install necessary packages
+
+# This script sets up the environment to run the Supabase MCP server.
+
+# Update package lists and install necessary packages
 sudo apt-get update
-sudo apt-get install -y nodejs npm postgresql postgresql-contrib
+sudo apt-get install -y nodejs npm
 
-# Set up environment variables
-export DATABASE_URL="your_database_url"
-export OTHER_ENV_VARS="values"
-
-# Install required dependencies
+# Install project dependencies
 npm install
 
-# Prepare the database if needed
-# psql postgresql://username:password@host/database < schema.sql
+# Additional setup steps can be placed here
+# e.g., setting up environment variables, databases etc.
+echo "Installation completed!"
